@@ -54,6 +54,14 @@ public class TriangleDecisionTableTests {
         assertEquals(Triangle.Type.NOT_TRIANGLE,
                 Triangle.classify(3, 1, 2));
     }
+    // R8: input is not an integer / hoặc ngoài domain -> INVALID
+    @Test
+    void rule8_inputNotIntegerOrOutOfDomain() {
+        // 0,0,0 mô phỏng input không hợp lệ
+        assertEquals(Triangle.Type.NOT_TRIANGLE,
+                Triangle.classify(0, 0, 0));
+    }
+
 
 }
 
