@@ -1,3 +1,4 @@
+
 package triangle;
 
 import domain.Triangle;
